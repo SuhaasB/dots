@@ -15,14 +15,14 @@ bspc config gapless_monocle      true
 xsetroot -cursor_name left_ptr
 
 # wallpaper #
-feh --bg-scale $HOME/Pictures/Wallpapers/veeterzy-sMQiL_2v4vs-unsplash.jpg
+feh --bg-scale $HOME/Downloads/Wallpapers/minimalist-earth-and-stars-azuhiglpab75bebz.jpg
 
 # polybar #
 $HOME/.config/polybar/launch.sh
 
 # window rules #
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a firefox desktop='^2' follow=on
+bspc rule -a LibreWolf desktop='^2' follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

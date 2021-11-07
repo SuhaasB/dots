@@ -46,7 +46,7 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 0
+padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
@@ -57,8 +57,8 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center =
-modules-right = pulseaudio wlan eth temperature battery date powermenu
-# mpd filesystem xbacklight alsa xkeyboard memory cpu i3
+modules-right = pulseaudio wlan eth temperature battery date
+# powermenu mpd filesystem xbacklight alsa xkeyboard memory cpu i3
 
 tray-position = right
 tray-padding = 2
@@ -128,7 +128,7 @@ label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
 ; Separator in between workspaces
-label-separator = |
+;label-separator = |
 
 [module/i3]
 type = internal/i3
