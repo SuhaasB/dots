@@ -277,7 +277,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = VOL:%percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
@@ -337,7 +337,7 @@ full-at = 98
 format-charging = <animation-charging> CHR:<label-charging>
 format-charging-underline = #ffb52a
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <animation-discharging> BAT:<label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " FULL "
@@ -364,7 +364,7 @@ animation-discharging-framerate = 750
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 80
 
 format = <ramp> <label>
 format-underline = #f50a4d
