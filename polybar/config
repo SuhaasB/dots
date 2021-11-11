@@ -80,7 +80,10 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+format = <label>
+label = %title%
+label_maxlen = 10
+label_empty = ""
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -264,8 +267,8 @@ interval = 5
 date =
 date-alt = " %a %b %d |"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %I:%M %p
+time-alt = %I:%M:%S %p
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
